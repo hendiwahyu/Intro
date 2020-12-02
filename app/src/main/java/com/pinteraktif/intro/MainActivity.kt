@@ -1,6 +1,7 @@
 package com.pinteraktif.intro
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -21,6 +22,11 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             tittle.visibility = View.VISIBLE
+
         }
+
+        songAttributes()
     }
+
+
 }
