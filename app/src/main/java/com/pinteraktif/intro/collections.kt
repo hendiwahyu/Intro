@@ -18,6 +18,8 @@ private const val TAG = "collections"
 
 
 fun collections(){
+
+    //non mutables list and arrays
     val weekdays = listOf<String>("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
     val wednesday = weekdays[2]
 
@@ -27,6 +29,9 @@ fun collections(){
     val randomArray: Array<String> = arrayOf("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
     randomArray[0] = "test"
 
+
+
+    // mutable lists and arrays
     val randomArrayList = arrayListOf("hendi", 1, 2, "wahyu", 0.2)
     randomArrayList.add(0, 3)
     Log.d(TAG, "collections: $randomArrayList")
@@ -34,12 +39,12 @@ fun collections(){
     Log.d(TAG, "collections: $randomArrayList")
 
 
-    val randomCollections = arrayListOf<String>("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
-    randomCollections.add(5, "Saturday")
-    randomCollections.add(6, "Sunday")
-    randomCollections[0] = "test"
+    val daysMutableList = arrayListOf<String>("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+    daysMutableList.add(5, "Saturday")
+    daysMutableList.add(6, "Sunday")
+    daysMutableList[0] = "test"
 
-    Log.d(TAG, "collections: $randomCollections")
+    Log.d(TAG, "collections: $daysMutableList")
 
 
 
