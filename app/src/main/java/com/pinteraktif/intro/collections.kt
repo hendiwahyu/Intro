@@ -19,7 +19,7 @@ private const val TAG = "collections"
 
 fun collections(){
 
-    //non mutables list and arrays
+    //non mutable list and arrays
     val weekdays = listOf<String>("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
     val wednesday = weekdays[2]
 

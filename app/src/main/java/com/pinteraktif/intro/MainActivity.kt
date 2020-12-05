@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity() {
 
         songAttributes()
         collections()
+        fizzBuzz()
+//        printPrime()
+
     }
 
 
