@@ -7,6 +7,8 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
+private const val TAG = "MainActivity"
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var tittle: TextView
@@ -22,15 +24,21 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             tittle.visibility = View.VISIBLE
-
         }
-
         songAttributes()
         collections()
         fizzBuzz()
-//        printPrime()
+
+        //functions Homework
+        val genre = genreSong("Pop Rock")
+        val artist = artistSong("Michael Jackson")
+        val year = yearSong(1991)
+        Log.d(TAG, "Genre = $genre")
+        Log.d(TAG, "Artist name = $artist")
+        Log.d(TAG, "Year release = $year")
 
     }
+
 
 
 }

@@ -6,18 +6,19 @@ import android.util.Log
 private const val TAG = "SONG"
 
 // Song attributes
-val songName: String = "Black or White"
-val albumName: String = "Dangerous"
-val artistName: String = " Michael Jackson "
-val trackNumber:Int = 1
-val composerName: String = " Michael Jackson and Bill Bottrell"
-val durationInMillis: Int = 256
-val genre: String = "Pop Rock"
-val isTopBillboardSong: Boolean = true
-val chordPlayed = 'E'
 
 
 fun songAttributes(){
+    val songName = "Black or White"
+    val albumName = "Dangerous"
+    val artistName = " Michael Jackson "
+    val trackNumber = 1
+    val composerName = " Michael Jackson and Bill Bottrell"
+    val durationInMillis = 256
+    val genre = "Pop Rock"
+    val isTopBillboardSong = true
+    val chordPlayed = 'E'
+
     Log.d(TAG, "Song Name: $songName")
     Log.d(TAG, "Album Name: $albumName")
     Log.d(TAG, "Artist Name: $artistName")
@@ -29,3 +30,4 @@ fun songAttributes(){
     Log.d(TAG, "Chord Played : $chordPlayed")
 
 }
+
