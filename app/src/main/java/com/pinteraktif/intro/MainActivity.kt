@@ -57,10 +57,14 @@ class MainActivity : AppCompatActivity() {
 
         //Homework Classes and Objects
 
-        var camryCar = Cars("Toyota", "sedan", 2013, 1500 )
+        val camryCar = Cars("Toyota", "Camry Sedan ", 2013, 1500 )
         camryCar.cars(0)
 
+        val jeepWrangler = Cars("FCA US LLC", "Jeep Wrangler", 2020, 2034 )
+        jeepWrangler.cars(70)
 
+        val coupeMercedes = Cars("Mercedes Benz", "Coupe Mercedes", 2019, 2045)
+        coupeMercedes.cars(120)
 
     }
 

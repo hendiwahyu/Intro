@@ -13,14 +13,14 @@ class Cars(makeCars: String, modelCars: String, yearCars: Int, weightCars: Int) 
 
         when (tripValue) {
             0 -> {
-                Log.d(TAG, "Car in repair")
+                Log.d(TAG, "$model $year from $make with weight $weight trip value since maintenance is ${tripSinceMaintenance}, Car in REPAIR ")
                 isDriving = false
                 needsMaintenance = false
             }
             in 1..100 -> {
                 for (i in 0 until tripValue) {
                     tripSinceMaintenance = i + 1
-                    Log.d(TAG, " $tripSinceMaintenance Car is driving")
+                    Log.d(TAG, " $model $year from $make with weight $weight trip value since maintenance is $tripSinceMaintenance Car is DRIVING ")
                     isDriving
                     needsMaintenance = false
                 }
@@ -31,7 +31,7 @@ class Cars(makeCars: String, modelCars: String, yearCars: Int, weightCars: Int) 
                     tripSinceMaintenance = i + 1
                     Log.d(
                         TAG,
-                        "Trip value since maintenance is $tripSinceMaintenance , car needs maintenance"
+                        "$model $year from $make with weight $weight trip value since maintenance is $tripSinceMaintenance , car needs MAINTENANCE !"
                     )
                     isDriving
                     needsMaintenance = true
