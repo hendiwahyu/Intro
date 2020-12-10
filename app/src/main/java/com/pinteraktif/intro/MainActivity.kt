@@ -37,7 +37,33 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "Artist name = $artist")
         Log.d(TAG, "Year release = $year")
 
+        //Primary Constructor
+        val person = Person("Joe", 21)
+
+        val t_shirt = Clothing("t-shirt", 10)
+        t_shirt.washClothing()
+        val isClean = t_shirt.isClean
+
+        //Secondary Constructor
+        val clothSecCons = Clothing("Pajama", 10, isClean= true )
+
+        //SubClassing and SuperClassing
+        val sneakers = ShoesWithLaces("sneakers", 10)
+        val sneakerName = sneakers.laceShoes("adidas")
+
+        if(sneakers.areLacesClean){
+            Log.d(TAG, "$sneakerName is clean")
+        }
+
+        //Homework Classes and Objects
+
+        var camryCar = Cars("Toyota", "sedan", 2013, 1500 )
+        camryCar.cars(0)
+
+
+
     }
+
 
 
 
